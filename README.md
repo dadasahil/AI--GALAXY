@@ -1,86 +1,161 @@
-# AI Galaxy
+# 🌌 AI Galaxy
 
-A React, Vite, Tailwind CSS, React Router, and Supabase app for discovering, saving, and comparing AI tools.
+### Your Personal Guide to the AI Universe 🤖✨
 
-## What's included
+**AI Galaxy** is a web-based platform designed to bring the world of Artificial Intelligence into one place. It provides users with an interactive and easy-to-explore environment for discovering AI concepts, tools, technologies, and applications.
 
-- Landing page with animated galaxy background, trending tools, categories, and a featured workflow
-- AI Tool Directory with 113 tools, search, category filters, pricing filters, saved favorites, and compare actions
-- Tool Detail pages with descriptions, use cases, outlooks, pros/cons, alternatives, and tool logos
-- Compare page for up to 4 tools side by side
-- Find My AI quiz
-- AI Workflows
-- Dashboard with Supabase-synced saved tools and compare state
-- Supabase Auth login, Google OAuth, and verified email registration
-- AI News static sample page
+🔗 **Live Project:** https://aigalaxy2.netlify.app/
 
-Prompt Library, Resume Builder, and Testimonials were removed from the active website.
+---
 
-## Getting started
+## 🚀 About The Project
 
-Do not open the root `index.html` directly. This is a Vite React app, so run the dev server:
+Artificial Intelligence is rapidly transforming education, business, healthcare, software development, entertainment, and many other fields.
 
-```bash
-npm install
-npm run dev
-```
+**AI Galaxy** aims to provide a simple and user-friendly platform where students, beginners, and AI enthusiasts can explore the AI ecosystem and understand different AI technologies.
 
-Then open the local URL Vite prints, usually:
+The project focuses on making AI information more accessible, organized, and engaging through a modern web interface.
+
+---
+
+## 🎯 Objectives
+
+- 🤖 Introduce users to Artificial Intelligence
+- 🌐 Provide an easy-to-use AI learning platform
+- 📚 Help beginners understand different AI concepts
+- 🔍 Organize AI-related information in one place
+- 💡 Encourage students to explore AI technologies
+- 🚀 Create an interactive and modern user experience
+
+---
+
+## ✨ Features
+
+- 🌌 Modern AI-themed user interface
+- 🤖 AI-focused content and resources
+- 📱 Responsive web design
+- 🧭 Easy navigation
+- 💻 Simple and beginner-friendly interface
+- 🔗 Web-based accessibility
+- 🎨 Interactive visual experience
+- 🌐 Deployed online using Netlify
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Deployment
+- Netlify
+
+---
+
+## 📂 Project Structure
 
 ```text
-http://localhost:5173
+AI-Galaxy/
+│
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   └── ...
+├── assets/
+│   └── ...
+└── README.md
 ```
 
-Build for production:
+> The actual file structure can be modified according to the files in your project.
 
-```bash
-npm run build
-```
+---
 
-## Supabase setup
+## ⚙️ How To Run The Project
 
-The app reads Supabase credentials from `.env`:
+### Method 1 — Open Locally
 
-```bash
-VITE_SUPABASE_URL=https://ovlzfchwneswstziaykh.supabase.co
-VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
-```
+1. Download or clone the project.
+2. Open the project folder.
+3. Locate `index.html`.
+4. Double-click `index.html`.
+5. The AI Galaxy website will open in your browser.
 
-Run `supabase-schema.sql` in the Supabase SQL editor if the `profiles` table or row-level-security policies are missing.
+### Method 2 — Using VS Code
 
-Enable email confirmations in Supabase Auth so password registrations are not usable until the user clicks the verification link:
+1. Open the project folder in **Visual Studio Code**.
+2. Install the **Live Server** extension.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
+5. The website will open in your browser.
 
-- Authentication > Providers > Email > Confirm email: enabled
-- Authentication > URL Configuration > Site URL: your deployed site URL
-- Authentication > URL Configuration > Redirect URLs: your deployed site URL and local dev URL, for example `http://localhost:5173/login`
+---
 
-Enable Google sign-in in Supabase Auth:
+## 🌐 Live Demo
 
-- Authentication > Providers > Google: enabled
-- Add your Google OAuth client ID and client secret in the Supabase dashboard.
-- In Google Cloud Console, add the callback URL shown by Supabase for the Google provider.
+You can access the deployed project here:
 
-The frontend still only needs these public environment variables:
+👉 **AI Galaxy:** https://aigalaxy2.netlify.app/
 
-```bash
-VITE_SUPABASE_URL=https://your-project-ref.supabase.co
-VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
-```
+---
 
-Do not put the Google client secret in `.env`; keep it only in Supabase.
+## 🎓 Target Users
 
-The `profiles` table is keyed by `auth.users.id` and stores:
+AI Galaxy can be useful for:
 
-- `email`
-- `full_name`
-- `saved_items`
-- `compare_items`
-- `updated_at`
+- 👨‍🎓 Students
+- 👩‍💻 Developers
+- 🤖 AI/ML enthusiasts
+- 🔬 Researchers
+- 🌱 Beginners learning AI
+- 💡 Technology enthusiasts
 
-After login/register, the app creates or loads the current user's profile row and automatically syncs saved favorites and compare list updates to Supabase.
+---
 
-Visitors can browse and open the first 10 AI tools without an account. Tool 11 and beyond redirect to login/registration.
+## 🔮 Future Enhancements
 
-## Tech
+The project can be extended with:
 
-React 19 - Vite - Tailwind CSS v4 - React Router v7 - Supabase Auth and Database
+- 🤖 AI chatbot integration
+- 🧠 AI/ML learning modules
+- 🔎 AI tool search
+- 📚 AI tutorials and courses
+- 📰 Latest AI news section
+- 🎥 AI learning videos
+- 🧪 Interactive AI demonstrations
+- 🧑‍💻 AI project ideas
+- 🔐 User authentication
+- 📊 Personalized learning dashboard
+- 🌙 Dark/Light mode
+- 🗃️ AI tools and resources database
+
+---
+
+## 🌟 Why AI Galaxy?
+
+AI Galaxy is designed with the idea of creating a **single digital space for exploring the AI universe**.
+
+Instead of searching across multiple platforms, users can use AI Galaxy as a starting point for discovering AI concepts, resources, technologies, and applications.
+
+> **Explore AI. Learn AI. Build the Future. 🚀**
+
+---
+
+## 👨‍💻 Project
+
+**Project Name:** AI Galaxy  
+**Category:** Artificial Intelligence / Web Application  
+**Platform:** Web  
+**Deployment:** Netlify  
+
+🔗 **Live Website:** https://aigalaxy2.netlify.app/
+
+---
+
+## 📜 License
+
+This project is created for educational and project-development purposes.
+
+You are welcome to explore and learn from the project.
