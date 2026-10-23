@@ -1,0 +1,19 @@
+name: Dashboard QA intentional failure
+run-name: Dashboard QA intentional failure
+
+on:
+  push:
+    branches:
+      - codex/dashboard-qa-test
+
+permissions:
+  contents: read
+
+jobs:
+  intentional-failure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create one visible test failure
+        run: |
+          echo "Intentional test failure for the AI DevOps Assistant dashboard."
+          exit 1
